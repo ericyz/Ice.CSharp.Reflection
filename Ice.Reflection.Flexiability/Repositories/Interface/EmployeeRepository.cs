@@ -24,6 +24,7 @@ namespace Ice.Reflection.Flexiability.Repositories.Interface
 
         public IEnumerable<Employee> ReadAll()
         {
+           Console.WriteLine("EmployRepository Repositoy ReadAll is called");
             return new List<Employee>{
                 new Employee{Name = "Eric", Id = 1},
             };

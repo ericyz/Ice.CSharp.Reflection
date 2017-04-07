@@ -23,6 +23,7 @@ namespace Ice.Reflection.Flexiability.Repositories.Interface
 
         public System.Collections.Generic.IEnumerable<Company> ReadAll()
         {
+            Console.WriteLine("Company Repositoy ReadAll is called");
             return new List<Company>{
                 new Company{Id = 1, Name = "IceProduction"}
             };

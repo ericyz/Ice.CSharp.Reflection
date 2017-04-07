@@ -23,7 +23,8 @@ namespace Ice.Reflection.Flexiability.Repositories.Interface
 
         public IEnumerable<Department> ReadAll()
         {
-            return new List<Department>{
+                Console.WriteLine("DepartmentRepository Repositoy ReadAll is called");
+                return new List<Department>{
                 new Department{Name = "Product", Id = 1},
                 new Department{Name = "Finance", Id = 2 },
                 new Department{Name = "Customer Service", Id = 3}
